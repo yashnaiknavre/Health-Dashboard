@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthCare Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary header">
+            <div class="container-fluid">
+
+                <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarSupportedContent">
+                    <div>
+                        <a class="navbar-brand md-4" href="#">
+                            <img src="images/TestLogo.png" alt="Logo">
+                        </a>
+                    </div>
+                    <div>
+
+
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex">
+                            <li class="nav-item d-flex align-items-center padding">
+                                <img src="images/home_FILL0_wght300_GRAD0_opsz24.png" alt="">
+                                <a class="nav-link " aria-current="page" href="#">Overview</a>
+                            </li>
+                            <li class="nav-item d-flex align-items-center padding active">
+                                <img src="images/group_FILL0_wght300_GRAD0_opsz24.png" alt="">
+                                <a class="nav-link " href="#">Patients</a>
+                            </li>
+                            <li class="nav-item d-flex align-items-center padding">
+                                <img src="images/calendar_today_FILL0_wght300_GRAD0_opsz24.png" alt="">
+                                <a class="nav-link" href="#">Schedule</a>
+                            </li>
+                            <li class="nav-item d-flex align-items-center padding">
+                                <img src="images/chat_bubble_FILL0_wght300_GRAD0_opsz24.png" alt="">
+                                <a class="nav-link" href="#">Message</a>
+                            </li>
+                            <li class="nav-item d-flex align-items-center padding">
+                                <img src="images/credit_card_FILL0_wght300_GRAD0_opsz24.png" alt="">
+                                <a class="nav-link" href="#">Transactions</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="d-flex align-items-center">
+                        <div class="d-flex align-items-center me-3">
+                            <a class="navbar-brand md-4" href="#">
+                                <img src="images/senior-woman-doctor-and-portrait-smile-for-health-2023-11-27-05-18-16-utc.png"
+                                    alt="Doctor's Image">
+                            </a>
+                            <ul class="list-unstyled ms-2 mb-0">
+                                <li><b>Dr. Jose Simmons</b></li>
+                                <li>General Practitioner</li>
+                            </ul>
+                        </div>
+
+                        <a class="navbar-brand md-4" href="#">
+                            <img src="images/settings_FILL0_wght300_GRAD0_opsz24.png" alt="Settings">
+                        </a>
+                        <a class="navbar-brand md-4" href="#">
+                            <img src="images/more_vert_FILL0_wght300_GRAD0_opsz24.png" alt="More Options">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+    </header>
+    <main class="d-flex justify-content-between margin">
+        <div class="box1">
+            <div class=" d-flex justify-content-between margin">
+                <div>
+                    <h4><b>Patients</b></h4>
+                </div>
+                <div><img s src="images/search_FILL0_wght300_GRAD0_opsz24.png" alt=""></div>
+            </div>
+            <div class="d-flex  align-items-center justify-content-between margin">
+                <div class="d-flex align-items-center ">
+                    <a class="navbar-brand md-4" href="#">
+                        <img src="images/Layer 8.png" alt="Doctor's Image">
+                    </a>
+                    <ul class="list-unstyled ms-2 mb-0">
+                        <li><b>Emily Williams</b></li>
+                        <li>
+                            <p class="font-desc">Female,18</p>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <a class="navbar-brand md-4" href="#">
+                        <img src="images/more_horiz_FILL0_wght300_GRAD0_opsz24.png" alt="Settings">
+                    </a>
+                </div>
+
+            </div>
+            <div class="d-flex  align-items-center justify-content-between margin">
+                <div class="d-flex align-items-center ">
+                    <a class="navbar-brand md-4" href="#">
+                        <img src="images/Layer 8.png" alt="Doctor's Image">
+                    </a>
+                    <ul class="list-unstyled ms-2 mb-0">
+                        <li><b>Emily Williams</b></li>
+                        <li>
+                            <p class="font-desc">Female,18</p>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <a class="navbar-brand md-4" href="#">
+                        <img src="images/more_horiz_FILL0_wght300_GRAD0_opsz24.png" alt="Settings">
+                    </a>
+                </div>
+
+            </div>
+            <div class="d-flex  align-items-center justify-content-between margin">
+                <div class="d-flex align-items-center ">
+                    <a class="navbar-brand md-4" href="#">
+                        <img src="images/Layer 8.png" alt="Doctor's Image">
+                    </a>
+                    <ul class="list-unstyled ms-2 mb-0">
+                        <li><b>Emily Williams</b></li>
+                        <li>
+                            <p class="font-desc">Female,18</p>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <a class="navbar-brand md-4" href="#">
+                        <img src="images/more_horiz_FILL0_wght300_GRAD0_opsz24.png" alt="Settings">
+                    </a>
+                </div>
+
+            </div>
+            <div class="d-flex  align-items-center justify-content-between margin">
+                <div class="d-flex align-items-center ">
+                    <a class="navbar-brand md-4" href="#">
+                        <img src="images/Layer 8.png" alt="Doctor's Image">
+                    </a>
+                    <ul class="list-unstyled ms-2 mb-0">
+                        <li><b>Emily Williams</b></li>
+                        <li>
+                            <p class="font-desc">Female,18</p>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <a class="navbar-brand md-4" href="#">
+                        <img src="images/more_horiz_FILL0_wght300_GRAD0_opsz24.png" alt="Settings">
+                    </a>
+                </div>
+
+            </div>
+            <div class="d-flex  align-items-center justify-content-between margin">
+                <div class="d-flex align-items-center ">
+                    <a class="navbar-brand md-4" href="#">
+                        <img src="images/Layer 8.png" alt="Doctor's Image">
+                    </a>
+                    <ul class="list-unstyled ms-2 mb-0">
+                        <li><b>Emily Williams</b></li>
+                        <li>
+                            <p class="font-desc">Female,18</p>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <a class="navbar-brand md-4" href="#">
+                        <img src="images/more_horiz_FILL0_wght300_GRAD0_opsz24.png" alt="Settings">
+                    </a>
+                </div>
+
+            </div>
+            <div class="d-flex  align-items-center justify-content-between margin">
+                <div class="d-flex align-items-center ">
+                    <a class="navbar-brand md-4" href="#">
+                        <img src="images/Layer 8.png" alt="Doctor's Image">
+                    </a>
+                    <ul class="list-unstyled ms-2 mb-0">
+                        <li><b>Emily Williams</b></li>
+                        <li>
+                            <p class="font-desc">Female,18</p>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <a class="navbar-brand md-4" href="#">
+                        <img src="images/more_horiz_FILL0_wght300_GRAD0_opsz24.png" alt="Settings">
+                    </a>
+                </div>
+
+            </div>
+            <div class="d-flex  align-items-center justify-content-between margin">
+                <div class="d-flex align-items-center ">
+                    <a class="navbar-brand md-4" href="#">
+                        <img src="images/Layer 8.png" alt="Doctor's Image">
+                    </a>
+                    <ul class="list-unstyled ms-2 mb-0">
+                        <li><b>Emily Williams</b></li>
+                        <li>
+                            <p class="font-desc">Female,18</p>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <a class="navbar-brand md-4" href="#">
+                        <img src="images/more_horiz_FILL0_wght300_GRAD0_opsz24.png" alt="Settings">
+                    </a>
+                </div>
+
+            </div>
+            <div class="d-flex  align-items-center justify-content-between margin">
+                <div class="d-flex align-items-center ">
+                    <a class="navbar-brand md-4" href="#">
+                        <img src="images/Layer 8.png" alt="Doctor's Image">
+                    </a>
+                    <ul class="list-unstyled ms-2 mb-0">
+                        <li><b>Emily Williams</b></li>
+                        <li>
+                            <p class="font-desc">Female,18</p>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <a class="navbar-brand md-4" href="#">
+                        <img src="images/more_horiz_FILL0_wght300_GRAD0_opsz24.png" alt="Settings">
+                    </a>
+                </div>
+
+            </div>
+            <div class="d-flex  align-items-center justify-content-between margin">
+                <div class="d-flex align-items-center ">
+                    <a class="navbar-brand md-4" href="#">
+                        <img src="images/Layer 8.png" alt="Doctor's Image">
+                    </a>
+                    <ul class="list-unstyled ms-2 mb-0">
+                        <li><b>Emily Williams</b></li>
+                        <li>
+                            <p class="font-desc">Female,18</p>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <a class="navbar-brand md-4" href="#">
+                        <img src="images/more_horiz_FILL0_wght300_GRAD0_opsz24.png" alt="Settings">
+                    </a>
+                </div>
+
+            </div>
+            <div class="d-flex  align-items-center justify-content-between margin">
+                <div class="d-flex align-items-center ">
+                    <a class="navbar-brand md-4" href="#">
+                        <img src="images/Layer 8.png" alt="Doctor's Image">
+                    </a>
+                    <ul class="list-unstyled ms-2 mb-0">
+                        <li><b>Emily Williams</b></li>
+                        <li>
+                            <p class="font-desc">Female,18</p>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <a class="navbar-brand md-4" href="#">
+                        <img src="images/more_horiz_FILL0_wght300_GRAD0_opsz24.png" alt="Settings">
+                    </a>
+                </div>
+
+            </div>
+            <div class="d-flex  align-items-center justify-content-between margin">
+                <div class="d-flex align-items-center ">
+                    <a class="navbar-brand md-4" href="#">
+                        <img src="images/Layer 8.png" alt="Doctor's Image">
+                    </a>
+                    <ul class="list-unstyled ms-2 mb-0">
+                        <li><b>Emily Williams</b></li>
+                        <li>
+                            <p class="font-desc">Female,18</p>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <a class="navbar-brand md-4" href="#">
+                        <img src="images/more_horiz_FILL0_wght300_GRAD0_opsz24.png" alt="Settings">
+                    </a>
+                </div>
+
+            </div>
+            <div class="d-flex  align-items-center justify-content-between margin">
+                <div class="d-flex align-items-center ">
+                    <a class="navbar-brand md-4" href="#">
+                        <img src="images/Layer 8.png" alt="Doctor's Image">
+                    </a>
+                    <ul class="list-unstyled ms-2 mb-0">
+                        <li><b>Emily Williams</b></li>
+                        <li>
+                            <p class="font-desc">Female,18</p>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <a class="navbar-brand md-4" href="#">
+                        <img src="images/more_horiz_FILL0_wght300_GRAD0_opsz24.png" alt="Settings">
+                    </a>
+                </div>
+
+            </div>
+            <div class="d-flex  align-items-center justify-content-between margin">
+                <div class="d-flex align-items-center ">
+                    <a class="navbar-brand md-4" href="#">
+                        <img src="images/Layer 8.png" alt="Doctor's Image">
+                    </a>
+                    <ul class="list-unstyled ms-2 mb-0">
+                        <li><b>Emily Williams</b></li>
+                        <li>
+                            <p class="font-desc">Female,18</p>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <a class="navbar-brand md-4" href="#">
+                        <img src="images/more_horiz_FILL0_wght300_GRAD0_opsz24.png" alt="Settings">
+                    </a>
+                </div>
+
+            </div>
+            <div class="d-flex  align-items-center justify-content-between margin">
+                <div class="d-flex align-items-center ">
+                    <a class="navbar-brand md-4" href="#">
+                        <img src="images/Layer 8.png" alt="Doctor's Image">
+                    </a>
+                    <ul class="list-unstyled ms-2 mb-0">
+                        <li><b>Emily Williams</b></li>
+                        <li>
+                            <p class="font-desc">Female,18</p>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <a class="navbar-brand md-4" href="#">
+                        <img src="images/more_horiz_FILL0_wght300_GRAD0_opsz24.png" alt="Settings">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <div class="centerbox">
+            <div>
+                <div>
+                    <h4 class="heading margin">Daigonosis History</h4>
+                </div>
+                <div class="d-flex flex-column">
+                    <div id="graph">
+                    </div>
+                    <div id="row3" class="margin">
+                        <div class="rowfordetails1">
+                            <div class="margin">
+                                <img src="images/respiratory rate.png" alt="">
+                            </div>
+                            <div>
+                                <p class="titleofbox margin">Respiratory Rate</p>
+                                <p class="Descofbox margin"><b>20 bpm</b></p>
+                            </div>
+                            <div>
+                                <p class="rowstatus margin">Normal</p>
+                            </div>
+                        </div>
+                        <div class="rowfordetails2">
+                            <div class="margin">
+                                <img src="images/temperature.png" alt="">
+                            </div>
+                            <div>
+                                <p class="titleofbox margin">Temperature</p>
+                                <p class="Descofbox margin"><b>98.6°F</b></p>
+                            </div>
+                            <div>
+                                <p class="rowstatus margin">Normal</p>
+                            </div>
+                        </div>
+                        <div class="rowfordetails3">
+                            <div class="margin">
+                                <img src="images/HeartBPM.png" alt="">
+                            </div>
+                            <div>
+                                <p class="titleofbox margin">Heart Rate</p>
+                                <p class="Descofbox margin"><b>78 bpm</b></p>
+                            </div>
+                            <div>
+                                <p class="rowstatus margin"> <span class="mx-2"> <img src="images/ArrowDown.png"
+                                            alt=""></span>Lower than Average</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="border: 2px solid chocolate; height: 22.81rem; position: relative; top: 39rem;">
+                <div>
+                    <h4 class="heading margin">Daigonostic List</h4>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="box2 d-flex flex-column ">
+            <div>
+            <div class="margin  align-items-center" style="background: transparent url('img/Layer 2.png') 0% 0% no-repeat padding-box;
+            opacity: 1; justify-items: center">
+                <div>
+                    <img src="images/Layer 2.png" alt="">
+                </div>
+                <div class=" margin">
+                    <h4>Jessica Taylor</h4>
+                </div>
+            </div>
+            <div>
+            
+                <div class="margin" style="margin-left: 2rem;">
+                    <div class="d-flex align-items-left">
+                        <div class="d-flex align-items-center me-3">
+                            <a class="navbar-brand md-4" href="#">
+                                <img src="images/calendar_today_FILL0_wght300_GRAD0_opsz24.png " alt="">
+                            </a>
+                            <ul class="list-unstyled ms-2 mb-0 ps-2">
+                                <li class="box3head">Date Of Birth</li>
+                                <li><B>August 23, 1996</B></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="margin">
+                    <div class="d-flex align-items-left">
+                        <div class="d-flex align-items-center me-3">
+                            <a class="navbar-brand md-4" href="#">
+                                <img src="images/FemaleIcon.png " alt="">
+                            </a>
+                            <ul class="list-unstyled ms-2 mb-0 ps-2">
+                                <li class="box3head">Gender</li>
+                                <li><B>Female</B></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="margin">
+                    <div class="d-flex align-items-left">
+                        <div class="d-flex align-items-center me-3">
+                            <a class="navbar-brand md-4" href="#">
+                                <img src="images/PhoneIcon.png" alt="">
+                            </a>
+                            <ul class="list-unstyled ms-2 mb-0 ps-2">
+                                <li class="box3head">Contact Info</li>
+                                <li><B>(415)555-1234</B></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="margin">
+                    <div class="d-flex align-items-left">
+                        <div class="d-flex align-items-center me-3">
+                            <a class="navbar-brand md-4" href="#">
+                                <img src="images/PhoneIcon.png" alt="">
+                            </a>
+                            <ul class="list-unstyled ms-2 mb-0 ps-2">
+                                <li class="box3head">Emergency Contact</li>
+                                <li><B>(415)555-3678</B></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="margin">
+                    <div class="d-flex align-items-left">
+                        <div class="d-flex align-items-center me-3">
+                            <a class="navbar-brand md-4" href="#">
+                                <img src="images/InsuranceIcon.png" alt="">
+                            </a>
+                            <ul class="list-unstyled ms-2 mb-0 ps-2">
+                                <li class="box3head">Insurance Provider</li>
+                                <li><B>Sunrise Health Assurance</B></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="margin align-items-center">
+                <button class="info-button">
+                    <p id="innerbtn">Show All Information</p>
+                </button>
+            </div>
+            </div>
+            <div style="margin: 10rem 0rem;">
+                <div class="margin  align-items-center" style="background: transparent url('img/Layer 2.png') 0% 0% no-repeat padding-box;
+                            opacity: 1; justify-items: center">
+                    <div>
+                        <img src="images/Layer 2.png" alt="">
+                    </div>
+                    <div class=" margin">
+                        <h4>Jessica Taylor</h4>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+        const DATA_COUNT = 12;
+        const labels = [];
+        for (let i = 0; i < DATA_COUNT; ++i) {
+            labels.push(i.toString());
+        }
+        const datapoints = [0, 20, 20, 60, 60, 120, 65, 180, 120, 125, 105, 110, 170];
+        const data = {
+            labels: labels,
+            datasets: [
+                {
+                    label: 'Cubic interpolation (monotone)',
+                    data: datapoints,
+                    borderColor: Utils.CHART_COLORS.red,
+                    fill: false,
+                    cubicInterpolationMode: 'monotone',
+                    tension: 0.4
+                }, {
+                    label: 'Cubic interpolation',
+                    data: datapoints,
+                    borderColor: Utils.CHART_COLORS.blue,
+                    fill: false,
+                    tension: 0.4
+                }, {
+                    label: 'Linear interpolation (default)',
+                    data: datapoints,
+                    borderColor: Utils.CHART_COLORS.green,
+                    fill: false
+                }
+            ]
+        };
+
+        const config = {
+            type: 'line',
+            data: data,
+            options: {
+                responsive: true,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Chart.js Line Chart - Cubic interpolation mode'
+                    },
+                },
+                interaction: {
+                    intersect: false,
+                },
+                scales: {
+                    x: {
+                        display: true,
+                        title: {
+                            display: true
+                        }
+                    },
+                    y: {
+                        display: true,
+                        title: {
+                            display: true,
+                            text: 'Value'
+                        },
+                        suggestedMin: -10,
+                        suggestedMax: 200
+                    }
+                }
+            },
+        };
+
+
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="js/chart.js"></script>
+</body>
+
+</html>

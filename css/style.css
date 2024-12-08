@@ -1,0 +1,178 @@
+body{
+    width: 1600px;  
+    height: 1195px;
+    background: #F6F7F8;
+    margin: 0;
+    padding: 0;
+}
+.padding{
+
+padding-left: 0.9rem;
+}
+header{
+    top: 18px;
+left: 18px;
+/* width: 1564px; */
+height: 72px;
+/* UI Properties */
+background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border-radius: 70px;
+opacity: 1;
+}
+
+.active{
+top: 34px;
+left: 601px;
+width: 122px;
+height: 41px;
+background: var(--activestate_bg_1) 0% 0% no-repeat padding-box;
+background: #01F0D0 0% 0% no-repeat padding-box;
+border-radius: 41px;
+opacity: 1;
+}
+
+.box1{
+    height: 65.875rem;
+    width: 22.938rem;
+    border: 1px solid red;
+    opacity: 1;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    overflow: auto;
+}
+.box2{
+    height: 46.25rem;
+    width: 22.938rem;
+    /* width: 65.875rem; */
+    border: 1px solid red;
+    opacity: 1;
+    background: #ffffff 0% 0% no-repeat padding-box;
+}
+.centerbox{
+    height: 42.063rem;
+    width: 47.875rem;
+    border: 1px solid red;
+    background: #ffffff 0% 0% no-repeat padding-box;
+}
+.margin{
+    margin: 1rem;
+}
+.font-desc{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-707070);
+text-align: left;
+font: normal normal normal 14px/19px Manrope;
+letter-spacing: 0px;
+color: #707070;
+opacity: 1;
+
+}
+.heading{
+font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-800) var(--unnamed-font-size-24)/var(--unnamed-line-spacing-33) var(--unnamed-font-family-manrope);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-072635);
+text-align: left;
+font: normal normal 800 24px/33px Manrope;
+letter-spacing: 0px;
+color: #072635;
+opacity: 1;
+
+}
+
+.box3head{
+    font: var(--unnamed-font-style-normal) normal medium var(--unnamed-font-size-14)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-072635);
+text-align: left;
+font: normal normal medium 14px/19px Manrope;
+letter-spacing: 0px;
+color: #072635;
+text-transform: capitalize;
+opacity: 1;
+}
+.info-button{
+   top: 739px;
+    left: 1289px;
+    width: 235px;
+    position: absolute;
+    height: 45px;
+/* UI Properties */
+background: var(--activestate_bg_1) 0% 0% no-repeat padding-box;
+background: #01F0D0 0% 0% no-repeat padding-box;
+border-radius: 41px;
+border: none;
+opacity: 1;
+}
+#innerbtn{
+   padding: 0.5rem 1rem;
+
+}
+#graph{
+    position: absolute;
+    /* top: 215px; */
+left: 437px;
+width: 726px;
+height: 298px;
+/* UI Properties */
+background: #F4F0FE 0% 0% no-repeat padding-box;
+border-radius: 12px;
+opacity: 1;
+border: 1px solid green;
+}
+#row3{
+margin: 0rem 1.5rem;
+/* border: 1px solid yellow; */
+    position: absolute;
+    top: 467px;
+    width: 711px;
+    height: 16rem;
+    display: flex;
+    justify-content: space-between;
+}
+.rowfordetails1{
+    /* border: 1px solid pink; */
+width: 228px;
+height: 271px;
+background: #E0F3FA 0% 0% no-repeat padding-box;
+border-radius: 12px;
+opacity: 1;
+}
+.rowfordetails2{
+    /* border: 1px solid pink; */
+width: 228px;
+height: 271px;
+background: #FFE6E9 0% 0% no-repeat padding-box;
+border-radius: 12px;
+opacity: 1;
+}
+.rowfordetails3{
+    /* border: 1px solid pink; */
+width: 228px;
+height: 271px;
+background: #FFE6F1 0% 0% no-repeat padding-box;
+border-radius: 12px;
+opacity: 1;
+}
+.titleofbox{
+    font: var(--unnamed-font-style-normal) normal medium 16px/22px var(--unnamed-font-family-manrope);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-072635);
+text-align: left;
+font-size: 16px;
+letter-spacing: 0px;
+color: #072635;
+text-transform: capitalize;
+opacity: 1;
+}
+.Descofbox{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-800) 30px/41px var(--unnamed-font-family-manrope);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-072635);
+text-align: left;
+font-size: 30px;
+letter-spacing: 0px;
+color: #072635;
+opacity: 1;
+
+}
