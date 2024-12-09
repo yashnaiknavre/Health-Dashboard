@@ -12,11 +12,9 @@ padding-left: 0.9rem;
 header{
     top: 18px;
 left: 18px;
-/* width: 1564px; */
 height: 72px;
-/* UI Properties */
-background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
-background: #FFFFFF 0% 0% no-repeat padding-box;
+background: var(--unnamed-color-ffffff)  ;
+background: #FFFFFF ;
 border-radius: 70px;
 opacity: 1;
 }
@@ -26,8 +24,8 @@ top: 34px;
 left: 601px;
 width: 122px;
 height: 41px;
-background: var(--activestate_bg_1) 0% 0% no-repeat padding-box;
-background: #01F0D0 0% 0% no-repeat padding-box;
+background: var(--activestate_bg_1)  ;
+background: #01F0D0  ;
 border-radius: 41px;
 opacity: 1;
 }
@@ -35,9 +33,9 @@ opacity: 1;
 .box1{
     height: 65.875rem;
     width: 22.938rem;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     opacity: 1;
-    background: #ffffff 0% 0% no-repeat padding-box;
+    background: #ffffff  ;
     overflow: auto;
 }
 .box2{
@@ -45,15 +43,18 @@ opacity: 1;
     /* height: 46.25rem; */
     width: 22.938rem;
     /* width: 65.875rem; */
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    border-radius: 16px;
     opacity: 1;
-    background: #ffffff 0% 0% no-repeat padding-box;
+    background: #ffffff  ;
 }
 .centerbox{
     height: 42.063rem;
     width: 47.875rem;
-    border: 1px solid red;
-    background: #ffffff 0% 0% no-repeat padding-box;
+    /* border: 1px solid red; */
+    background: #ffffff ;
+    border-radius: 16px;
+opacity: 1;
 }
 .margin{
     margin: 1rem;
@@ -86,7 +87,7 @@ opacity: 1;
 letter-spacing: var(--unnamed-character-spacing-0);
 color: var(--unnamed-color-072635);
 text-align: left;
-font: normal normal medium 14px/19px Manrope;
+font-size: 14px;
 letter-spacing: 0px;
 color: #072635;
 text-transform: capitalize;
@@ -99,8 +100,8 @@ opacity: 1;
     position: absolute;
     height: 45px;
 /* UI Properties */
-background: var(--activestate_bg_1) 0% 0% no-repeat padding-box;
-background: #01F0D0 0% 0% no-repeat padding-box;
+background: var(--activestate_bg_1)  ;
+background: #01F0D0  ;
 border-radius: 41px;
 border: none;
 opacity: 1;
@@ -116,10 +117,10 @@ left: 437px;
 width: 726px;
 height: 298px;
 /* UI Properties */
-background: #F4F0FE 0% 0% no-repeat padding-box;
+background: #F4F0FE  ;
 border-radius: 12px;
 opacity: 1;
-border: 1px solid green;
+/* border: 1px solid green; */
 }
 #row3{
 margin: 0rem 1.5rem;
@@ -135,7 +136,7 @@ margin: 0rem 1.5rem;
     /* border: 1px solid pink; */
 width: 228px;
 height: 271px;
-background: #E0F3FA 0% 0% no-repeat padding-box;
+background: #E0F3FA  ;
 border-radius: 12px;
 opacity: 1;
 }
@@ -143,7 +144,7 @@ opacity: 1;
     /* border: 1px solid pink; */
 width: 228px;
 height: 271px;
-background: #FFE6E9 0% 0% no-repeat padding-box;
+background: #FFE6E9  ;
 border-radius: 12px;
 opacity: 1;
 }
@@ -151,7 +152,7 @@ opacity: 1;
     /* border: 1px solid pink; */
 width: 228px;
 height: 271px;
-background: #FFE6F1 0% 0% no-repeat padding-box;
+background: #FFE6F1  ;
 border-radius: 12px;
 opacity: 1;
 }
@@ -179,14 +180,16 @@ opacity: 1;
 }
 .Daigonosticheader{
     margin: 1rem;
-    height: 3rem;
+    /* height: 3rem; */
     width: 45.375rem;
+        overflow: auto;
+    height: 16.38rem;
     /* border: 1px solid navy; */
-    border-radius: 24px;
+    /* border-radius: 24px;
     background: #F6F7F8;
     opacity: 1;
-    display: flex;
-}
+    display: flex; */
+/* }
 .Daigonosticheader ul {
     display: flex;
      justify-content: space-between;
@@ -194,5 +197,87 @@ opacity: 1;
 .Daigonosticheader ul li {
     /* display: flex; */
      justify-content: space-between;
+}
+.tablerow{
+height: 3.688rem;
+vertical-align: middle;
+letter-spacing: var(--unnamed-character-spacing-0);
+text-align: left;
+font-size: 14px ;
+letter-spacing: 0px;
+color: #072635;
+opacity: 1;
+}
+
+/* Apply border-radius and background color to the thead */
+.theader {
+  /* background-color: #4CAF50; Green background (change it if needed) */
+  border-radius: 24px; /* Rounded corners */
+  overflow: auto; /* Prevent overflow and keep the rounded corners neat */
+}
+
+/* Apply padding, color, and other styles to header cells (th) */
+.tableindex {
+  padding: 12px 20px; /* Add padding for better spacing */
+  text-align: left; /* Align text to the left */
+  color: white; /* White text for contrast */
+  font-weight: bold; /* Bold text for header */
+}
+
+/* Table row styling */
+.tablerow {
+  padding: 12px 20px; /* Adjust padding for table rows */
+  text-align: left; /* Align text to the left */
+  border-bottom: 1px solid #ddd; /* Light border under each row */
+}
+
+/* Optional: Add border to the table */
+.table {
+  width: 100%;
+  margin-top: 20px; /* Space above the table */
+  border-collapse: collapse; /* Ensures borders don't overlap */
+  overflow: auto;
+}
+
+#style-1::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+.scrollbar
+{
+	margin-left: 30px;
+	float: left;
+	height: 300px;
+	width: 65px;
+	background: #F5F5F5;
+	overflow-y: scroll;
+	margin-bottom: 25px;
+}
+
+.force-overflow
+{
+	min-height: 450px;
+}
+
+#wrapper
+{
+	text-align: center;
+	width: 500px;
+	margin: auto;
 }
 

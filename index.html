@@ -13,10 +13,10 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary header" style="background: #F6F7F8">
             <div class="container-fluid">
 
-                <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarSupportedContent" style="border-radius: 24px; background: #FFFFFF;">
                     <div>
                         <a class="navbar-brand md-4" href="#">
                             <img src="images/TestLogo.png" alt="Logo">
@@ -75,7 +75,10 @@
 
     </header>
     <main class="d-flex justify-content-between margin">
-        <div class="box1">
+        <div class="box1" style="background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border-radius: 16px;
+opacity: 1;">
             <div class=" d-flex justify-content-between margin">
                 <div>
                     <h4><b>Patients</b></h4>
@@ -107,7 +110,7 @@
                         <img src="images/Layer 8.png" alt="Doctor's Image">
                     </a>
                     <ul class="list-unstyled ms-2 mb-0">
-                        <li><b>Emily Williams</b></li>
+                        <li><b>Ryan Johnson</b></li>
                         <li>
                             <p class="font-desc">Female,18</p>
                         </li>
@@ -350,12 +353,13 @@
             </div>
         </div>
         <div class="centerbox">
-            <div>
+            <div style="height: 18.625rem;">
                 <div>
                     <h4 class="heading margin">Daigonosis History</h4>
                 </div>
                 <div class="d-flex flex-column">
                     <div id="graph">
+                        <canvas id="bloodPressureChart" width="400" height="200"></canvas>
                     </div>
                     <div id="row3" class="margin">
                         <div class="rowfordetails1">
@@ -398,26 +402,64 @@
                     </div>
                 </div>
             </div>
-            <div style="background: #FFFFFF;border-radius: 16px;
-opacity: 1; border: 2px solid rgb(30, 0, 224); height: 22.81rem; position: relative; top: 39rem;">
+            <div style="    background: #FFFFFF;
+    border-radius: 16px;
+    opacity: 1;
+    height: 21.813rem;
+    position: relative;
+    top: 24.813rem;">
                 <div>
-                    <h4 class="heading margin">Daigonostic List</h4>
+                    <h4 class="heading margin" style="height: 2.063rem;">Daigonostic List</h4>
                 </div>
-                <div class="Daigonosticheader">
-                    <ul class="list-unstyled ms-2 mb-0">
-                        <li>Problem/Diagnosis</li>
-                        <li>Description</li>
-                        <li>Status</li>
-                    </ul>
+                <div class="Daigonosticheader margin">
+                    <table class="table table-borderless">
+                        <thead class="theader">
+                            <tr>
+                                <th scope="col" class="tableindex">Problem/Diagnosis</th>
+                                <th scope="col" class="tableindex">Description</th>
+                                <th scope="col" class="tableindex">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tablerow">Hypertension</td>
+                                <td class="tablerow">Chronic high blood pressure</td>
+                                <td class="tablerow">Under Observation</td>
+                            </tr>
+                            <tr>
+                                <td class="tablerow">Type 2 Diabetes</td>
+                                <td class="tablerow">Insulin resistance and elevated blood sugar</td>
+                                <td class="tablerow">Cured</td>
+                            </tr>
+                            <tr>
+                                <td class="tablerow">Asthma</td>
+                                <td class="tablerow">Recurrent episodes of bronchial constriction</td>
+                                <td class="tablerow">Inactive</td>
+                            </tr>
+                            <tr>
+                                <td class="tablerow">Asthma</td>
+                                <td class="tablerow">Recurrent episodes of bronchial constriction</td>
+                                <td class="tablerow">Inactive</td>
+                            </tr>
+                            <tr>
+                                <td class="tablerow">Asthma</td>
+                                <td class="tablerow">Recurrent episodes of bronchial constriction</td>
+                                <td class="tablerow">Inactive</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
                 </div>
             </div>
         </div>
 
 
         <div class="box2 d-flex flex-column ">
-            <div style="height:46.25rem; border:1px solid orange;">   
+            <div style="height:46.25rem;
+border-radius: 16px;
+opacity: 1;">   
             <div class="margin  align-items-center" style="background: transparent url('img/Layer 2.png') 0% 0% no-repeat padding-box;
-            opacity: 1; justify-items: center">
+            opacity: 1; justify-items: center ">
                 <div>
                     <img src="images/Layer 2.png" alt="">
                 </div>
@@ -499,8 +541,11 @@ opacity: 1; border: 2px solid rgb(30, 0, 224); height: 22.81rem; position: relat
                 </div>
             </div>
             </div>
-            <div>
-                <div class=" align-items-center mt-2" style="border: 1px solid blue; height:19rem; overflow: auto;">
+            <div style="background: #F6F7F8">
+                <div class=" align-items-center mt-2" style=" height:19rem; overflow: auto; background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border-radius: 16px;
+opacity: 1;">
                     <div>
                         <h4 class="heading margin">Lab Results</h4>
                     </div>
@@ -530,85 +575,76 @@ opacity: 1; border: 2px solid rgb(30, 0, 224); height: 22.81rem; position: relat
                     </div>  
                 </div>
             </div>
-           
         </div>
     </main>
     <footer>
-
+        <pre id="response">Loading...</pre>
     </footer>
     <script>
-        const DATA_COUNT = 12;
-        const labels = [];
-        for (let i = 0; i < DATA_COUNT; ++i) {
-            labels.push(i.toString());
-        }
-        const datapoints = [0, 20, 20, 60, 60, 120, 65, 180, 120, 125, 105, 110, 170];
-        const data = {
-            labels: labels,
+            const ctx = document.getElementById('bloodPressureChart').getContext('2d');
+            const bloodPressureChart = new Chart(ctx, {
+                type: 'line', // Line chart type
+            data: {
+                labels: ['Oct 2023', 'Nov 2023', 'Dec 2023', 'Jan 2024', 'Feb 2024', 'Mar 2024'], // X-axis labels
             datasets: [
-                {
-                    label: 'Cubic interpolation (monotone)',
-                    data: datapoints,
-                    borderColor: Utils.CHART_COLORS.red,
-                    fill: false,
-                    cubicInterpolationMode: 'monotone',
-                    tension: 0.4
-                }, {
-                    label: 'Cubic interpolation',
-                    data: datapoints,
-                    borderColor: Utils.CHART_COLORS.blue,
-                    fill: false,
-                    tension: 0.4
-                }, {
-                    label: 'Linear interpolation (default)',
-                    data: datapoints,
-                    borderColor: Utils.CHART_COLORS.green,
-                    fill: false
-                }
-            ]
-        };
-
-        const config = {
-            type: 'line',
-            data: data,
+            {
+                label: 'Systolic',
+            data: [120, 140, 160, 120, 140, 160], // Data for Systolic
+            borderColor: 'rgba(255, 99, 132, 1)', // Line color
+            backgroundColor: 'rgba(255, 99, 132, 0.2)', // Fill under the line
+            fill: false, // Disable filling under the line
+            tension: 0.4, // Smooth curve
+        },
+            {
+                label: 'Diastolic',
+            data: [80, 90, 78, 70, 75, 78], // Data for Diastolic
+            borderColor: 'rgba(54, 162, 235, 1)',
+            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+            fill: false,
+            tension: 0.4,
+        },
+            ],
+    },
             options: {
                 responsive: true,
-                plugins: {
-                    title: {
-                        display: true,
-                        text: 'Chart.js Line Chart - Cubic interpolation mode'
-                    },
-                },
-                interaction: {
-                    intersect: false,
-                },
-                scales: {
-                    x: {
-                        display: true,
-                        title: {
-                            display: true
-                        }
-                    },
-                    y: {
-                        display: true,
-                        title: {
-                            display: true,
-                            text: 'Value'
-                        },
-                        suggestedMin: -10,
-                        suggestedMax: 200
-                    }
-                }
+            plugins: {
+                legend: {
+                display: true,
+            position: 'right', // Legend position
+        },
+            tooltip: {
+                callbacks: {
+                label: function (context) {
+              const label = context.dataset.label || '';
+            const value = context.raw;
+            return `${label}: ${value}`;
             },
-        };
-
-
-
+          },
+        },
+      },
+      scales: {
+        x: {
+          title: {
+            display: true,
+            text: 'Months',
+          },
+        },
+        y: {
+          title: {
+            display: true,
+            text: 'Blood Pressure (mmHg)',
+          },
+          min: 60,
+          max: 180,
+        },
+      },
+    },
+  });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <script src="js/chart.js"></script>
+    <!-- <script src="js/chart.js"></script> -->
 </body>
 
 </html>
