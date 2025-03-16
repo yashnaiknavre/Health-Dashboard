@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary header" style="background: #F6F7F8">
             <div class="container-fluid">
@@ -359,7 +360,8 @@ opacity: 1;">
                 </div>
                 <div class="d-flex flex-column">
                     <div id="graph">
-                        <canvas id="bloodPressureChart" width="400" height="200"></canvas>
+                        <canvas id="bloodPressureChart" width="400" height="200" style="width: 690px;
+    padding-left: 1rem;"></canvas>
                     </div>
                     <div id="row3" class="margin">
                         <div class="rowfordetails1">
@@ -578,7 +580,7 @@ opacity: 1;">
         </div>
     </main>
     <footer>
-        <pre id="response">Loading...</pre>
+        <!-- <pre id="response">Loading...</pre> -->
     </footer>
     <script>
             const ctx = document.getElementById('bloodPressureChart').getContext('2d');

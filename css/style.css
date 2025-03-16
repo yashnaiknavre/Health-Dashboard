@@ -1,5 +1,5 @@
 body{
-    width: 1600px;  
+    width: 1300px;  
     height: 1195px;
     background: #F6F7F8;
     margin: 0;
@@ -95,7 +95,7 @@ opacity: 1;
 }
 .info-button{
    top: 739px;
-    left: 1289px;
+    left: 1043px;
     width: 235px;
     position: absolute;
     height: 45px;
@@ -113,7 +113,7 @@ opacity: 1;
 #graph{
     position: absolute;
     /* top: 215px; */
-left: 437px;
+left: 287px;
 width: 726px;
 height: 298px;
 /* UI Properties */
